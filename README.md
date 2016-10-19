@@ -7,6 +7,6 @@
 https://github.com/yilylong/UserGuideView
 可定制性不好，UI是死的，还需要单独写，当然可以作为参考写自己想要的效果
 
-![](/demo1.png)</br>
-![](/demo2.png)</br>
-![](/demo3.png)
+<img src=https://github.com/xturbofan/MaskDemo/blob/master/demo1.png width="300" height="500">
+<img src=https://github.com/xturbofan/MaskDemo/blob/master/demo2.png width="300" height="500">
+<img src=https://github.com/xturbofan/MaskDemo/blob/master/demo3.png width="300" height="500">
