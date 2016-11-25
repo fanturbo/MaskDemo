@@ -3,10 +3,11 @@
     android:id="@+id/tishiDialog"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d2d2d2">
+    android:background="#aa000000">
 
     <ImageView
         android:id="@+id/iv"
+        android:src="@mipmap/test"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

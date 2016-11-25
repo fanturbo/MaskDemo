@@ -24,4 +24,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_click_first"
         android:text="Second" />
+
+    <Button
+        android:id="@+id/btn_click_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_click_second"
+        android:text="Third" />
 </RelativeLayout>

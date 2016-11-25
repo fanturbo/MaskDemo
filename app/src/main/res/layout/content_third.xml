@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.test.maskdemo.ThirdActivity"
+    tools:showIn="@layout/activity_third">
+
+    <com.test.maskdemo.RippleIntroView
+        android:id="@+id/layout_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AA000000"
+        android:clickable="true"
+        android:fitsSystemWindows="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_plus"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/ic_launcher" />
+    </com.test.maskdemo.RippleIntroView>
+</RelativeLayout>

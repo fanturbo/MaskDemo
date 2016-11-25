@@ -18,7 +18,7 @@ import android.widget.Toast;
 public class SecondActivity extends AppCompatActivity {
 
     private WindowManager windowManager;
-    private ImageView img;
+    private View view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,12 +39,7 @@ public class SecondActivity extends AppCompatActivity {
     //MaskDemo第二种方式
     private void initMask() {
         windowManager = getWindowManager();
-        // 动态初始化图层
-        img = new ImageView(this);
-        img.setLayoutParams(new WindowManager.LayoutParams(
-                android.view.ViewGroup.LayoutParams.MATCH_PARENT,
-                android.view.ViewGroup.LayoutParams.MATCH_PARENT));
-        img.setImageResource(R.mipmap.test);
+        view = LayoutInflater.from(this).inflate(R.layout.layout_dialog_second, null);
         // 设置LayoutParams参数
         WindowManager.LayoutParams params = new WindowManager.LayoutParams();
         //兼容6.0
@@ -61,13 +56,13 @@ public class SecondActivity extends AppCompatActivity {
         params.width = WindowManager.LayoutParams.MATCH_PARENT;
         params.height = WindowManager.LayoutParams.MATCH_PARENT;
         // 添加到当前的窗口上
-        windowManager.addView(img, params);
+        windowManager.addView(view, params);
         // 点击图层之后，将图层移除
-        img.setOnClickListener(new View.OnClickListener() {
+        view.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
-                windowManager.removeView(img);
+                windowManager.removeView(view);
                 Toast.makeText(SecondActivity.this, "Image dismiss", Toast.LENGTH_SHORT).show();
             }
         });
@@ -76,6 +71,5 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        windowManager.removeView(img);
     }
 }

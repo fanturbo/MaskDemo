@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.test.maskdemo">
+
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <application
         android:allowBackup="true"
@@ -25,6 +26,10 @@
         <activity
             android:name=".SecondActivity"
             android:label="@string/title_activity_second"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ThirdActivity"
+            android:label="@string/title_activity_third"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
